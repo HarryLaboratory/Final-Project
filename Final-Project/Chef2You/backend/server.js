@@ -3,7 +3,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const { Pool } = require('pg');
 
-// Import routes
+// Import des routes
 const chefRoutes = require('./routes/chefRoutes');
 const authRoutes = require('./routes/authRoutes');
 const commentRoutes = require('./routes/commentRoutes');
@@ -14,20 +14,18 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 5000;  
 
-// Allow only the frontend URL for security reasons
-const allowedOrigins = ['https://final-project-frontend-tngm.onrender.com'];  // Replace with your frontend URL
-
-// CORS middleware with configuration
+// CORS setup
+const allowedOrigins = ['https://final-project-frontend-tngm.onrender.com']; // Frontend URL
 app.use(cors({
   origin: function(origin, callback) {
-    // If no origin or if the origin is allowed, accept the request
     if (!origin || allowedOrigins.includes(origin)) {
       return callback(null, true);
     }
     return callback(new Error('Not allowed by CORS'));
-  }
+  },
 }));
 
+// Middleware
 app.use(express.json());  // To handle JSON in requests
 
 // Database connection with SSL handling 
@@ -68,7 +66,7 @@ app.get('/', async (req, res) => {
   }
 });
 
-// API Routes
+// Routes API
 app.use('/api', chefRoutes);  
 app.use('/api', authRoutes);  
 app.use('/api', commentRoutes); 
@@ -77,6 +75,7 @@ app.use('/api', commentRoutes);
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
 
 
 

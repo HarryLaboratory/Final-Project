@@ -1,0 +1,109 @@
+/* Chef card container */
+.chef-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px; /* Largeur maximale de la carte */
+    height: auto; /* Mettre la hauteur à auto pour qu'elle s'ajuste au contenu */
+    min-height: 800px; /* Assurer une hauteur minimale */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+/* Carrousel des photos à l'intérieur de la carte */
+.chef-card .slick-slider {
+    position: relative;
+    width: 100%;
+    height: 55%;  /* Ajuster la hauteur du carrousel à 55% de la carte */
+}
+
+/* Image inside the chef card */
+.chef-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Couvre toute la zone sans déformation */
+    display: block;
+}
+
+/* Text and info section below the image */
+.chef-card .chef-info {
+    flex-grow: 1; /* Permet à la section texte de remplir l'espace restant */
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Détails scrollables dans la carte */
+.scrollable-details {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Réglage pour éviter que les boutons du carrousel ne se chevauchent */
+.slick-prev, .slick-next {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #aaa; /* Changer en gris */
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Pour les boutons gauche et droit du carrousel */
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+/* Réglage responsive */
+@media (max-width: 768px) {
+    .chef-card {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+  
+  

@@ -1,0 +1,104 @@
+/* Layout for the home page content */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+/* Title and description styling */
+.home-page h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.home-page p {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Top chefs section */
+.top-chefs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Chef card */
+.chef-card {
+  width: 300px;
+  height: 500px; /* Fixe la hauteur de la Card */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 10px;
+}
+
+/* Chef card image adjustments */
+.chef-card img {
+  width: 100%;
+  height: 60%; /* L'image doit prendre 60% de la hauteur de la Card */
+  object-fit: cover; /* Pour que l'image remplisse l'espace sans déformation */
+  display: block;
+}
+
+/* Styling for carousel container */
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Garantit que le carrousel occupe toute la hauteur disponible */
+  overflow: hidden; /* Evite que l'image dépasse */
+}
+
+/* Adjust the images within the carousel */
+.slick-slide img {
+  width: 100% !important;
+  height: 100% !important; /* Pour que l'image prenne toute la hauteur du carrousel sans déformation */
+  object-fit: cover !important; /* Remplir sans distorsion */
+  display: block;
+}
+
+/* Chef card text and info section */
+.chef-card .chef-info {
+  padding: 10px;
+  text-align: center;
+  flex-grow: 1; /* Le texte occupe tout l'espace restant sous l'image */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Le texte reste en bas de la Card */
+}
+
+/* Text styling inside Chef card */
+.chef-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.chef-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+  

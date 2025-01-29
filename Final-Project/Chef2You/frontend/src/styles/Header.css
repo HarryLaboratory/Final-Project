@@ -1,0 +1,61 @@
+/* src/styles/Header.css */
+
+/* Header container */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  /* Navigation styling */
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Navigation links */
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /* Hover effect for links */
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Profile bubble styles */
+  .profile-bubble {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .profile-bubble:hover {
+    background-color: #0056b3;
+  }
+  
+  .profile-bubble-options {
+    display: none; /* Initially hidden */
+  }
+  
+  .profile-bubble:hover .profile-bubble-options {
+    display: block; /* Show options when hovered */
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  

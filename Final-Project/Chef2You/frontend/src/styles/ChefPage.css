@@ -1,0 +1,89 @@
+/* Layout for the Chef details page */
+.chef-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* Chef information section */
+.chef-info {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.chef-info img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.chef-details {
+  width: 45%;
+}
+
+.chef-details h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.chef-details p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Rating section */
+.rating {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.rating span {
+  font-size: 1.5rem;
+  color: #ff9800; /* Golden color for stars */
+}
+
+/* Comments section */
+.comment-section {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.comment-section h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.comment-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
+}
+
+
+
+  

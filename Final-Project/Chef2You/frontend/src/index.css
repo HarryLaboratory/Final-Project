@@ -1,0 +1,22 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  /* You can also define global variables here if needed */
+  :root {
+    --primary-color: #ff6600;
+    --secondary-color: #333333;
+  }
+  
+
+
